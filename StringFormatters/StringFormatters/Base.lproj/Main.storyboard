@@ -46,24 +46,40 @@
                                     <action selector="validate:" destination="BYZ-38-t0r" eventType="touchDown" id="R6m-8i-9BF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-N4-6xV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-N4-6xV">
                                 <rect key="frame" x="101" y="272" width="172" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-2L-w56" customClass="ATDateTextField" customModule="StringFormatters" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="330" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RZb-ed-2ho" firstAttribute="centerX" secondItem="o8M-6c-AtR" secondAttribute="centerX" id="1Fc-Mg-Y5D"/>
-                            <constraint firstItem="o8M-6c-AtR" firstAttribute="top" secondItem="RZb-ed-2ho" secondAttribute="bottom" constant="47" id="NSw-C0-Sqr"/>
-                            <constraint firstItem="Njq-aw-30d" firstAttribute="top" secondItem="o8M-6c-AtR" secondAttribute="bottom" constant="29" id="XhM-qK-5ON"/>
-                            <constraint firstItem="RZb-ed-2ho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="eY2-DJ-u0h"/>
-                            <constraint firstItem="o8M-6c-AtR" firstAttribute="centerX" secondItem="Njq-aw-30d" secondAttribute="centerX" id="hdj-ec-XnQ"/>
-                            <constraint firstItem="RZb-ed-2ho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="qLn-hf-vXc"/>
-                            <constraint firstAttribute="trailing" secondItem="o8M-6c-AtR" secondAttribute="trailing" id="xcm-dE-X0z"/>
-                            <constraint firstItem="o8M-6c-AtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z89-Zl-tW2"/>
+                            <constraint firstItem="RZb-ed-2ho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="0bJ-kD-BjW"/>
+                            <constraint firstItem="o8M-6c-AtR" firstAttribute="trailing" secondItem="ob5-2L-w56" secondAttribute="trailing" id="8q5-h5-FKi"/>
+                            <constraint firstItem="Njq-aw-30d" firstAttribute="top" secondItem="o8M-6c-AtR" secondAttribute="bottom" constant="29" id="FAX-U2-dUs"/>
+                            <constraint firstItem="Njq-aw-30d" firstAttribute="centerX" secondItem="lMq-N4-6xV" secondAttribute="centerX" id="GSJ-iv-j9N"/>
+                            <constraint firstItem="o8M-6c-AtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LTq-wc-snJ"/>
+                            <constraint firstItem="RZb-ed-2ho" firstAttribute="leading" secondItem="lMq-N4-6xV" secondAttribute="leading" id="Lt1-oe-a2Y"/>
+                            <constraint firstItem="RZb-ed-2ho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="Xr5-by-XrI"/>
+                            <constraint firstItem="ob5-2L-w56" firstAttribute="top" secondItem="lMq-N4-6xV" secondAttribute="bottom" constant="37" id="cax-1x-ES5"/>
+                            <constraint firstItem="lMq-N4-6xV" firstAttribute="top" secondItem="Njq-aw-30d" secondAttribute="bottom" constant="23" id="eqa-aP-xeo"/>
+                            <constraint firstItem="o8M-6c-AtR" firstAttribute="top" secondItem="RZb-ed-2ho" secondAttribute="bottom" constant="47" id="iyo-IZ-QK2"/>
+                            <constraint firstAttribute="trailing" secondItem="o8M-6c-AtR" secondAttribute="trailing" id="lU2-hl-t1C"/>
+                            <constraint firstItem="RZb-ed-2ho" firstAttribute="trailing" secondItem="lMq-N4-6xV" secondAttribute="trailing" id="wLX-cE-nzt"/>
+                            <constraint firstItem="lMq-N4-6xV" firstAttribute="centerX" secondItem="ob5-2L-w56" secondAttribute="centerX" id="xKG-QA-dgx"/>
+                            <constraint firstItem="o8M-6c-AtR" firstAttribute="leading" secondItem="ob5-2L-w56" secondAttribute="leading" id="yqx-Mm-Vo7"/>
                         </constraints>
                     </view>
                     <connections>
